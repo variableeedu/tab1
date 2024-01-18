@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Page } from './pages'
 
 function App() {
   const [index, setIndex] = useState(0)
@@ -20,6 +21,7 @@ function App() {
           setIndex(3)
         }} className='h-12 w-24 rounded-t-lg bg-green-300'>3</button>
       </div>
+      <Page index={index} />
       {index === 1 &&
         <div className='h-screen flex   bg-red-300'>web</div>
       }
