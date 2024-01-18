@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 function App() {
-  const [list, SetList] = useState(0)
   const [index, setIndex] = useState(0)
 
   return (
